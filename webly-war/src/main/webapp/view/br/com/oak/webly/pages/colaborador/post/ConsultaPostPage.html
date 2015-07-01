@@ -1,0 +1,47 @@
+<wicket:extend>
+	<div id="et-contact">
+		<form id="et_contact_form" wicket:id="formCPOST">
+			<div wicket:id="feedbackCPOST" />
+
+			<div class="grid_16 alpha omega">
+				<div class="grid_6 espacamento_div espacamento_top">
+					<p>
+						<input wicket:id="parteTitulo" type="text" class="input" tabindex="1" />
+					</p>
+				</div>
+
+				<div class="grid_3_m50px espacamento_div espacamento_top">
+					<p>
+						<input wicket:id="dateIniPublicacao" type="text" class="input" tabindex="2" />
+					</p>
+				</div>
+
+				<div class="grid_3_m50px espacamento_div espacamento_top">
+					<p>
+						<input wicket:id="dateFimPublicacao" type="text" class="input" tabindex="3" />
+					</p>
+				</div>
+			</div>
+			<div class="clear" />
+
+			<div class="grid_16 alpha omega">
+				<div class="grid_4 espacamento_div espacamento_top">
+					<p>
+						<div wicket:id="panelAutorAutoComplete"/>
+					</p>
+				</div>
+			</div>
+			<div class="clear" />
+			<br></br>
+
+			<input wicket:id="btnPesquisarCPOST" type="button" id="et_search" tabindex="7" />
+			<input wicket:id="btnNovoCPOST" type="button" id="et_novo" tabindex="6" />
+			<input wicket:id="btnVoltarCPOST" type="submit" id="et_voltar" tabindex="5" />
+			
+			<br></br> <br></br>
+			
+			<div wicket:id="gridPost" />
+			<br></br> <br></br>
+		</form>
+	</div>
+</wicket:extend>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>projetobase</display-name>
+	<context-param>
+		<param-name>timezone</param-name>
+		<param-value>GMT-3</param-value>
+	</context-param>
+    <context-param>
+        <param-name>ambiente</param-name>
+        <param-value>jboss</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>org.jboss.spring.factory.VFSXmlWebApplicationContext</param-value>
+    </context-param>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/conf/spring/spring-application.xml, classpath:/conf/spring/spring-security.xml</param-value>
+	</context-param>
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>classpath:conf/logging/logging.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+	</listener>
+
+	<!-- Início Spring Security Filter -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+	<!-- Fim Spring Security Filter -->
+
+	<!-- Início Wicket Filter -->
+	<filter>
+		<filter-name>wicket.filter</filter-name>
+		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+			<param-name>applicationClassName</param-name>
+			<param-value>br.com.oak.webly.application.WicketApplication</param-value>
+		</init-param>
+		<init-param>
+			<param-name>configuration</param-name>
+			<param-value>DEPLOYMENT</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>wicket.filter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	<!-- Fim Wicket Filter -->
+
+    <persistence-unit-ref>
+        <description>Persistence unit da aplicacao</description>
+        <persistence-unit-ref-name>webly-PU</persistence-unit-ref-name>
+        <persistence-unit-name>webly-PU</persistence-unit-name>
+    </persistence-unit-ref>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/publico/erro.html?erro=404</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/publico/erro.html?erro=500</location>
+	</error-page>
+
+	<error-page>
+		<error-code>503</error-code>
+		<location>/publico/erro.html?erro=503</location>
+	</error-page>
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+</web-app>

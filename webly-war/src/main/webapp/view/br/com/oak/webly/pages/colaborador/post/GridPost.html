@@ -1,0 +1,21 @@
+<wicket:panel>
+	<table width="100%" border="0" cellspacing="1" cellpadding="4" class="dataview">
+	    <tr>
+	        <th>Título</th>
+	        <th>Autor</th>
+	        <th>Data Publicação</th>
+
+	        <th id="acao">Ações</th>
+	    </tr>
+	    <tr wicket:id="dataViewPost">
+	        <td><span wicket:id="titulo"/></td>
+	        <td><span wicket:id="autor"/></td>
+	        <td><span wicket:id="dataPublicacao"/></td>
+
+			<td wicket:id="acoes" valign="middle">
+				<a wicket:id="alterar" href="#" class="btn_editar" title="Alterar">Alterar</a>
+			</td>
+	    </tr>
+	</table>
+	<span wicket:id="navigatorPost"/>
+</wicket:panel>

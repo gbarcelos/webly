@@ -1,0 +1,55 @@
+<wicket:panel>
+	<h1 style="border-bottom: 1px solid #e7e7e7; margin: 10px 0 10px 0;">
+		<span wicket:id="tituloSessaoPessoa" />
+	</h1>
+
+	<div class="grid_11 alpha omega">
+
+		<div class="grid_5 espacamento_div espacamento_top">
+			<p>
+				<input wicket:id="nomePessoa" type="text" class="input" />
+			</p>
+		</div>
+
+		<div class="grid_5_m50px espacamento_div espacamento_top">
+			<p>
+				<input wicket:id="email" type="text" class="input" />
+			</p>
+		</div>
+	</div>
+	<div class="clear" />
+	<br></br>
+	<input wicket:id="btnAlterarDadosPessoais" type="button"
+		id="et_alterarDadosPessoais" tabindex="1" />
+	<div class="clear" />
+
+	<h1 style="border-bottom: 1px solid #e7e7e7; margin: 10px 0 10px 0;">
+		<span wicket:id="tituloSessaoUsuario" />
+	</h1>
+
+	<div class="grid_11 alpha omega">
+		<div class="grid_5 espacamento_div espacamento_top">
+			<p>
+				<input wicket:id="nome" type="text" class="input" />
+			</p>
+		</div>
+
+		<div class="grid_5_m50px espacamento_div espacamento_top">
+			<p>
+				<input wicket:id="tipoUsuario.descricao" type="text" class="input" />
+			</p>
+		</div>
+	</div>
+
+	<div class="grid_11 alpha omega">
+		<div class="grid_5 espacamento_div espacamento_top">
+			<p>
+				<input wicket:id="dataInclusaoExtenso" type="text" class="input" />
+			</p>
+		</div>
+	</div>
+	<div class="clear" />
+	<br></br>
+	<input wicket:id="btnAlterarDadosUsuario" type="button"
+		id="et_alterarDadosUsuario" tabindex="2" />
+</wicket:panel>

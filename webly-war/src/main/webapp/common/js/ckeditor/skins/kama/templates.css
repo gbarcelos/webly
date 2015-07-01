@@ -1,0 +1,69 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+.cke_skin_kama .cke_tpl_list {
+	border: #dcdcdc 2px solid !important;
+	background-color: #fff !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+	width: 100% !important;
+	height: 220px !important;
+}
+
+.cke_skin_kama .cke_tpl_item {
+	margin: 5px !important;
+	padding: 7px !important;
+	border: #eee 1px solid !important;
+	*width: 88% !important;
+}
+
+.cke_skin_kama .cke_tpl_preview {
+	border-collapse: separate !important;
+	text-indent: 0 !important;
+	width: 100% !important;
+}
+
+.cke_skin_kama .cke_tpl_preview td {
+	padding: 2px !important;
+	vertical-align: middle !important;
+}
+
+.cke_skin_kama .cke_tpl_preview .cke_tpl_preview_img {
+	width: 100px !important;
+}
+
+.cke_skin_kama .cke_tpl_preview span {
+	white-space: normal !important;
+}
+
+.cke_skin_kama .cke_tpl_title {
+	font-weight: bold !important;
+}
+
+.cke_skin_kama .cke_tpl_list a:active .cke_tpl_item,.cke_skin_kama .cke_tpl_list a:hover .cke_tpl_item,.cke_skin_kama .cke_tpl_list a:focus .cke_tpl_item
+	{
+	border: #f93 1px solid !important;
+	background-color: #fffacd !important;
+}
+
+.cke_skin_kama .cke_tpl_list a:active *,.cke_skin_kama .cke_tpl_list a:hover *,.cke_skin_kama .cke_tpl_list a:focus *
+	{
+	cursor: pointer !important;
+}
+
+.cke_skin_kama .cke_browser_ie6 .cke_tpl_list a:active,.cke_skin_kama .cke_browser_ie6 .cke_tpl_list a:hover,.cke_skin_kama .cke_browser_ie6 .cke_tpl_list a:focus
+	{
+	background-position: 0 0 !important;
+}
+
+.cke_skin_kama .cke_hc .cke_tpl_list a:active .cke_tpl_item,.cke_skin_kama .cke_hc .cke_tpl_list a:hover .cke_tpl_item,.cke_skin_kama .cke_hc .cke_tpl_list a:focus .cke_tpl_item
+	{
+	border-width: 3px !important;
+}
+
+.cke_skin_kama .cke_tpl_empty,.cke_tpl_loading {
+	text-align: center !important;
+	padding: 5px !important;
+}
+

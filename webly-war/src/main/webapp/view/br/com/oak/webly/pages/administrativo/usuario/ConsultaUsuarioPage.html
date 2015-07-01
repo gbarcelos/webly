@@ -1,0 +1,43 @@
+<wicket:extend>
+	<div id="et-contact">
+		<form id="et_contact_form" wicket:id="formCOUSR">
+			<div wicket:id="feedbackCOUSR" />
+
+			<div class="grid_16 alpha omega">
+				<div class="grid_7 espacamento_div espacamento_top">
+					<p>
+						<input wicket:id="parteNome" type="text" class="input" tabindex="1" />
+					</p>
+				</div>
+		
+				<div class="grid_7_m50px espacamento_div espacamento_top">
+					<p>
+						<input wicket:id="email" type="text" class="input" tabindex="2" />
+					</p>
+				</div>
+		
+			</div>
+
+			<div class="grid_16 alpha omega">
+				<div class="grid_4 espacamento_div espacamento_top">
+					<p>
+						<select wicket:id="tipoUsuario" class="select" tabindex="3"></select>
+					</p>
+				</div>
+
+				<div class="grid_3_m50px espacamento_div espacamento_top">
+					<span wicket:id="statusRegistroAtivo" class="radioButtons"/>
+				</div>
+
+			</div>
+
+			<div class="clear" />
+			<br></br>
+			<input wicket:id="btnPesquisarCOUSR" type="button" id="et_search" tabindex="2" />
+			<input wicket:id="btnVoltarCOUSR" type="submit" id="et_voltar" tabindex="3" />
+			<br></br> <br></br>
+			<div wicket:id="gridUsuario" />
+			<br></br> <br></br>
+		</form>
+	</div>
+</wicket:extend>

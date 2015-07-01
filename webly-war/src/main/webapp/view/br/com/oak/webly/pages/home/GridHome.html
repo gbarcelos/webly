@@ -1,0 +1,30 @@
+<wicket:panel>
+	<div wicket:id="posts" class="post entry clearfix">
+		<h2 class="title">
+			<a href="#" wicket:id="linkTitulo">
+				<span wicket:id="linkTituloLabel"/>
+			</a>
+		</h2>
+		<p class="meta-info">
+			<span wicket:id="postadoPor"/>
+		</p>
+	
+		<div class="post-thumbnail">
+
+			<a href="#" wicket:id="linkImgPost">
+				<img wicket:id="imgPost" class='post-thumb' width='200' height='200' />
+				<span class="post-overlay"></span>
+			</a>		
+
+		</div>
+		<p>
+			<span wicket:id="resumoPost"/>
+		</p>
+		<a href="#" wicket:id="linkLeiaMais" class="readmore" >
+			<span wicket:id="linkLeiaMaislabel"/>
+		</a>		
+	</div>
+
+	<div class="clear"></div>
+	<span wicket:id="navigatorPost"/>
+</wicket:panel>

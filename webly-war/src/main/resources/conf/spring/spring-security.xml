@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider ref="customAuthenticationProvider" />
+	</authentication-manager>
+
+	<http use-expressions="true" auto-config="false" access-denied-page="/publico/erro/acesso-negado.html">
+
+		<intercept-url pattern="/"                  access="permitAll"/>
+		<intercept-url pattern="/login.*"           access="permitAll" />
+		<intercept-url pattern="/home.*"            access="permitAll" />
+
+		<intercept-url pattern="/publico/**"        access="permitAll" />
+		<intercept-url pattern="/visitante/**"      access="hasAnyRole('ROLE_VISITANTE', 'ROLE_COLAB', 'ROLE_ADMIN', 'ROLE_SP_ADMIN')" />
+		<intercept-url pattern="/administrativo/**" access="hasAnyRole('ROLE_ADMIN', 'ROLE_SP_ADMIN')" />
+		<intercept-url pattern="/colaborador/**"    access="hasAnyRole('ROLE_COLAB', 'ROLE_ADMIN', 'ROLE_SP_ADMIN')" />
+
+		<form-login login-page="/login.html" 
+    			    default-target-url="/home.html"
+			        authentication-failure-url="/login.html" />
+			        
+		<logout logout-url="/logout.html" 
+		        invalidate-session="true"
+			    logout-success-url="/home.html" />
+			    
+		<session-management invalid-session-url="/login.html">
+			<concurrency-control max-sessions="1" error-if-maximum-exceeded="true" />
+		</session-management>
+	</http>
+	<beans:bean name="customAuthenticationProvider" class="br.com.oak.webly.authentication.CustomAuthenticationProvider" />	
+</beans:beans>

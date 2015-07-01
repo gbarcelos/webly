@@ -1,0 +1,26 @@
+<wicket:extend>
+	<div id="content-area">
+		<div id="content-top" class="clearfix">
+			<div id="left-area">
+				<wicket:child />
+			</div>
+
+			<div id="sidebar">
+
+				<div wicket:id="panelSaudacao"></div>
+
+				<div id="search-2" class="widget widget_search">
+					<h4 class="widgettitle"></h4>
+					<form method="get" id="searchform">
+						<div>
+							<input type="text" value="" name="s" id="s" />
+							<input type="submit" id="searchsubmit" value="Search" />
+						</div>
+					</form>
+				</div>
+	
+				<div wicket:id="panelUltimas"></div>
+			</div>
+		</div>
+	</div>
+</wicket:extend>

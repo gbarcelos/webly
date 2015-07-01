@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pt-BR">
+<head>
+<wicket:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title wicket:id="pageTitle"></title>
+
+	<link
+		href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold'
+		rel='stylesheet' type='text/css' />
+	<link
+		href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911'
+		rel='stylesheet' type='text/css' />
+</wicket:head>
+</head>
+<body class="home blog gecko et_includes_sidebar">
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('ul.nav').superfish();
+		});
+	</script>
+
+	<div id="top">
+		<div id="top-center" class="index">
+
+			<div id="top-bottom">
+				<div class="container">
+
+					<div class="clearfix" id="header">
+
+						<a href="#" wicket:id="linkImg"><img wicket:id="img" /></a>
+
+						<p id="slogan" wicket:id="pageSlogan"></p>
+
+						<div class="clear"></div>
+
+						<div wicket:id="menuW"></div>
+
+						<div class="clear"></div>
+
+					</div>
+					<div id="category-name">
+						<h1 class="category-title" wicket:id="pageDescriptionTitle"></h1>
+						<p class="description" wicket:id="pageSubDescriptionTitle"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="main-area">
+		<div id="main-top-shadow">
+			<div class="container">
+				<wicket:child />
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="footer-content">
+			<div id="footer-top">
+				<div class="container">
+					<div id="footer-widgets" class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-bottom">
+		<div class="container clearfix">
+			<ul class="bottom-nav">
+				<li class="current_page_item">
+					<a href="#" wicket:id="linkInicio">
+						<span wicket:id="labelLinkInicio" />
+					</a>
+				</li>
+				<li class="page_item page-item-5">
+					<a href="#" wicket:id="linkFaleConosco">
+						<span wicket:id="labelLinkfaleConosco" />
+					</a>
+				</li>
+				<li class="page_item page-item-10">
+					<a href="#" wicket:id="linkLogin">
+						<span wicket:id="labellinkLogin" />
+					</a>
+				</li>
+				<li class="page_item page-item-7">
+					<a href="#" wicket:id="linkQuemSomos">
+						<span wicket:id="labelLinkquemSomos" />
+					</a>
+				</li>
+			</ul>
+			<p id="copyright">
+				<span wicket:id="labelCopyright" /> <a wicket:id="linkWicket"
+					href="#"> <span wicket:id="labellinkWicket" />
+				</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

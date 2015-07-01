@@ -1,0 +1,562 @@
+.feedbackPanelINFO {
+	color: blue;
+}
+.feedbackPanelERROR {
+	color: red;
+}
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+.espacamento_div {
+	float: left;
+	height: auto;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.espacamento_top {
+	margin-top: 10px;
+}
+.grid_1 {
+	width: 37.8px;
+}
+.grid_1_m50px {
+	width: 37.8px;
+	margin-left: 46px;
+}
+.grid_2 {
+	width: 94px;
+}
+.grid_2_m50px {
+	width: 94px;
+	margin-left: 46px;
+}
+.grid_3 {
+	width: 149.9px;
+}
+.grid_3_m50px {
+	width: 149.9px;
+	margin-left: 46px;
+}
+.grid_4 {
+	width: 206.8px;
+}
+.grid_4_m50px {
+	width: 206.8px;
+	margin-left: 46px;
+}
+.grid_5 {
+	width: 259px;
+}
+.grid_5_m50px {
+	width: 259px;
+	margin-left: 46px;
+}
+.grid_6 {
+	width: 316px;
+}
+.grid_6_m50px {
+	width: 316px;
+	margin-left: 46px;
+}
+.grid_6_select {
+	width: 328px;
+}
+.grid_7 {
+	width: 383px;
+}
+.grid_7_m50px {
+	width: 383px;
+	margin-left: 46px;
+}
+.grid_8 {
+	width: 440px;
+}
+.grid_8_m50px {
+	width: 440px;
+	margin-left: 46px;
+}
+.grid_9 {
+	width: 497px;
+}
+.grid_9_m50px {
+	width: 497px;
+	margin-left: 46px;
+}
+.grid_10 {
+	width: 565px;
+}
+.grid_10_m50px {
+	width: 565px;
+	margin-left: 46px;
+}
+.grid_11 {
+	width: 601px;
+}
+.grid_11_m50px {
+	width: 601px;
+	margin-left: 46px;
+}
+.grid_12 {
+	width: 660px;
+}
+.grid_12_m50px {
+	width: 660px;
+	margin-left: 46px;
+}
+.grid_13 {
+	width: 725px;
+}
+.grid_13_m50px {
+	width: 725px;
+	margin-left: 46px;
+}
+.grid_14 {
+	width: 782px;
+}
+.grid_14_m50px {
+	width: 782px;
+	margin-left: 46px;
+}
+.grid_15 {
+	width: 839px;
+}
+.grid_15_m50px {
+	width: 839px;
+	margin-left: 46px;
+}
+.grid_16 {
+  width: 896px;
+}
+.grid_100{
+  width:90% !important;
+}
+.rodape_coluna_tabela {
+	background: none repeat scroll 0 0 #1f64a2;
+	height: 30px;
+	color: #fff;
+}
+.titulo_coluna {
+	background: none repeat scroll 0 0 #EEEDED;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #1f64a2;
+}
+.titulo_coluna a span {
+	color: #1F64A2;
+}
+.linhaSelecionada {
+	background: none repeat scroll 0 0 #B0E2FF;
+	height: auto;
+	text-align: center;
+}
+#TabelaResultado {
+	width: 100%;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.TabelaResultado {
+	background-color: #d8d8d8;
+	border-radius: 5px 5px 5px 5px;
+}
+.TabelaResultado caption {
+	text-indent: -9000px;
+	height: 0px;
+}
+.TabelaResultado th {
+	background-color: #e8e8e6;
+}
+.TabelaResultado th span span {
+	font-style: normal;
+}
+.TabelaResultado .body tr:hover {
+	background-color: #fbfbfb;
+}
+.rodapeTabela {
+	background-color: #00CC00;
+}
+.linha1 {
+	background: none repeat scroll 0 0 #f0efef;
+	height: auto;
+	text-align: center;
+}
+.linha2 {
+	background: none repeat scroll 0 0 #ffffff;
+	height: auto;
+	text-align: center;
+}
+.numerodepaginas select {
+	width: 80px;
+	clear: both;
+}
+.rodape_coluna_tabela table tbody tr td:first-child {
+	
+}
+.input_irparapagina {
+	width: 33px;
+}
+.span_texto_paginacao {
+	color: #FFFFFF !important;
+}
+.wicket-aa-container ul {
+	margin: 0;
+	padding: 0;
+}
+.wicket-aa-container {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #FFFFFF !important;
+	border-color: -moz-use-text-color #CECECE #CECECE;
+	border-right: 1px solid #CECECE;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+	max-height: 200px;
+}
+.wicket-aa-container ul {
+	margin: 0;
+	padding: 0;
+}
+.wicket-aa-container li {
+	list-style: none outside none;
+	padding: 2px 8px;
+}
+.wicket-aa-container li:hover {
+	background: none repeat scroll 0 0 #C0C0C0 !important;
+}
+.wicket-aa-container li.selected {
+	background-color: #DDDDDD;
+}
+.msgsAlertasLogin li {
+	text-align: left;
+	width: 94% !important;
+	margin-bottom: 15px;
+}
+.msgsAlertas {
+	padding: 0;
+	width: 94% !important;
+}
+.msgsAlertas li {
+	height: 24px;
+	line-height: 23px;
+	list-style: none outside none;
+	margin-bottom: 15px;
+}
+.msgAlerta {
+	background-position: 0 0;
+	color: #A66615;
+}
+.msgInformativa {
+	background-position: 0 48px;
+	color: #1560A6;
+}
+.msgsAlertas span {
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 18px;
+	margin-left: 0;
+	margin-right: 8px;
+	margin-top: 3px;
+	padding-left: 22px !important;
+	width: 100% !important;
+}
+.msgAlerta {
+	color: #A66615;
+}
+.msgAlerta span {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	line-height: 16px;
+	padding-left: 20px;
+	width: 100%;
+}
+.msgERROR {
+	background-image: url("../images/iconesAlertas.png") !important;
+	background-repeat: no-repeat !important;
+	color: #A61515 !important;
+	background-position: 0 -33px;
+	background-repeat: no-repeat;
+	margin-top: 3px !important;
+}
+.msgInformativa span {
+	background-position: 0 50px;
+	background-repeat: no-repeat;
+	line-height: 16px;
+	padding-left: 20px;
+	width: 100%;
+}
+.msgInformativa {
+	color: #1560A6;
+}
+.msgINFO {
+	background-image: url("../images/iconesAlertas.png") !important;
+	background-repeat: no-repeat !important;
+	color: #1B72B7 !important;
+	background-position: 0 -66px;
+}
+p#linkRedefinir {
+	float: left;
+}
+.checkbox-container {
+	display: block;
+	margin-bottom: 12px;
+	float: left;
+}
+.checkbox-container .checkbox, .checkbox-container .checkbox-text,
+	.checkbox-container input[type="checkbox"], .checkbox-container label {
+	display: inline;
+	margin: 2px 8px 0 0;
+}
+.checkbox-list {
+	margin-bottom: 16px;
+	margin-left: 32px;
+}
+.checkbox-list .checkbox-container {
+	margin-bottom: 8px;
+}
+span.switch {
+	float: right;
+	color: #747474;
+	font-size: 12px;
+	line-height: 1.41667;
+	padding-top: 5px;
+}
+.et-protected-form-nu {
+	padding: 32px 37px 92px 32px;
+	text-align: right;
+}
+.et-protected-form-nu p {
+	padding-bottom: 16px;
+}
+.et-protected-form-nu p label {
+	position: relative;
+}
+.et-protected-form-nu p .et_protected_icon {
+	background: url("../images/shortcodes-sprite.png") no-repeat scroll
+		-190px -37px rgba(0, 0, 0, 0);
+	display: block;
+	height: 20px;
+	left: 18px;
+	position: absolute;
+	top: 2px;
+	width: 10px;
+}
+.et-protected-form-nu p .et_protected_password {
+	background-position: -275px -2px;
+	height: 23px;
+}
+.et-protected-form-nu label span {
+	display: none;
+}
+.et-protected-form-nu p input {
+	background: linear-gradient(to bottom, #F3F3F3 1%, #FEFEFE 100%) repeat
+		scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #E7E7E7;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1) inset;
+	box-sizing: border-box;
+	color: #363636;
+	font-size: 14px;
+	margin: 0 !important;
+	padding: 20px 20px 20px 40px;
+	position: relative;
+	width: 100%;
+}
+.et-protected-form-nu input.etlogin-button {
+	background: linear-gradient(to bottom, #F9F9F9 0%, #F5F5F5 100%) repeat
+		scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #E7E7E7;
+	box-shadow: 1px 1px 0 0 #FFFFFF inset;
+	color: #999999;
+	font-size: 14px;
+	padding: 14px 24px;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+div.wicket-modal div.w_blue div.w_left, div.wicket-modal div.w_blue div.w_right
+	{
+	background-image: none !important;
+}
+div.wicket-modal div.w_blue div.w_top, div.wicket-modal div.w_blue div.w_bottom,
+	div.wicket-modal div.w_blue div.w_topLeft, div.wicket-modal div.w_blue div.w_topRight,
+	div.wicket-modal div.w_blue div.w_bottomRight, div.wicket-modal div.w_blue div.w_bottomLeft
+	{
+	background-image: none !important;
+}
+div.wicket-modal div.w_blue a.w_close {
+	background-image: url("../images/frame-blue-1-alpha.png") !important;
+	background-repeat: no-repeat !important;
+}
+div.wicket-modal div.w_caption {
+	background-color: transparent !important;
+	color: #FFFFFF !important;
+	cursor: default;
+	height: 22px;
+	line-height: 1.4em;
+	overflow: hidden;
+	position: relative;
+}
+.w_blue {
+	background-color: #32474a !important;
+	border-radius: 10px 10px 10px 10px !important;
+	opacity: 0.9 !important;
+	width: 300px;
+}
+div.wicket-modal div.w_content {
+	background: none !important;
+	width: 100%;
+	color: #fff !important;
+	height: auto !important;
+}
+div.wicket-modal div.w_content_1 p {
+	font-size: 14px !important;
+	text-align: center !important;
+}
+div.wicket-modal div.w_content_2 {
+	background: none !important;
+	padding-top: 0.1em;
+	width: 100%;
+}
+div.wicket-modal div.w_content_3 {
+	border: none !important;
+	padding: 0;
+}
+div.wicket-modal a.w_close {
+	background-position: -59px 0 !important;
+	height: 22px !important;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0px !important;
+	width: 22px !important;
+}
+div.wicket-modal a.w_close:hover {
+	background-position: -81px 0 !important;
+	float: right;
+	height: 22px !important;
+	overflow: hidden;
+	width: 20px !important;
+}
+#et_novo, #et_search, #et_voltar, #et_salvar, #et_alterarDadosPessoais, #et_alterarDadosUsuario {
+	border: 0px !important;
+	color: #4c4b4b !important;
+	float: right;
+	font-size: 10px;
+	text-shadow: 1px 1px 1px #fff;
+	text-transform: uppercase;
+	margin-right: 9px;
+	height: 35px;
+	margin-right: 6px;
+}
+#et_novo, #et_search, #et_salvar, #et_voltar, #et_alterarDadosPessoais, #et_alterarDadosUsuario {
+	width: 73px;
+	background: url(../images/contact_submit.png) no-repeat;
+}
+.btn_editar {
+	background-image: url(../images/btn_editar.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 20px;
+	text-indent: -9000px !important;
+	width: 30px;
+}
+.radioButtons {
+	display: block;
+	clear: both;
+}
+input[disabled="disabled"] {
+	background: none !important;
+}
+table.dataview {
+    width: 100%;
+    clear: both;
+    /*border-bottom: 1px solid #0079d6;*/
+    border-bottom: 1px solid #e1e1e1;
+
+    background: none repeat scroll 0 0 #fff;
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+table.dataview caption {
+    text-align: left;
+}
+table.dataview tr {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+table.dataview tr.even {
+    /*background-color: #ffebcd !important;*/
+    background-color: #f9f9f9;
+}
+table.dataview tr.odd {
+    background-color: #fff !important;
+}
+table.dataview tr td {
+    padding-left: 8px;
+    padding-right: 30px;
+    height: 40px;
+}
+table.dataview tr th {
+
+    /*background-color: #c1e4ff;*/
+    background: none repeat scroll 0 0 #fff;
+
+    border-bottom: 1px solid #e1e1e1;
+    /*border-bottom: 1px solid #0079d6;*/
+
+    border-top: 1px solid #e1e1e1;
+	/*border-top: 1px solid #0079d6;*/
+
+    color: #333;
+    padding: 3px 30px 3px 8px;
+
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    height: 30px;
+}
+table.dataview tr th {
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+table.dataview tr th.wicket_orderDown {
+    background-color: #87cbff;
+    background-image: url("images/arrow_down.png");
+}
+table.dataview tr th.wicket_orderUp {
+    background-color: #87cbff;
+    background-image: url("images/arrow_up.png");
+}
+table.dataview tr th.wicket_orderNone {
+    background-image: url("images/arrow_off.png");
+}
+table.dataview tr th a {
+    font-weight: normal;
+}
+table.dataview #message {
+    padding-left: 3px;
+}
+table.dataview caption {
+    padding-bottom: 2px;
+}
+.grid_layout {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+.campo_data {
+    margin-right: 5px;
+}
+.floatLeft {
+    float: left;
+}

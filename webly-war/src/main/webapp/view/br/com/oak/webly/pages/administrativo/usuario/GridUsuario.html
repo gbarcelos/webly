@@ -1,0 +1,25 @@
+<wicket:panel>
+	<table width="100%" border="0" cellspacing="1" cellpadding="4" class="dataview">
+	    <tr>
+	        <th>Nome Pessoa</th>
+	        <th>Nome</th>
+	        <th>E-mail</th>
+	        <th>Perfil do usuário</th>
+	        <th>Data cadastro</th>
+
+	        <th id="acao">Ações</th>
+	    </tr>
+	    <tr wicket:id="dataViewUsuario">
+	        <td><span wicket:id="nomePessoa"/></td>
+	        <td><span wicket:id="nome"/></td>
+	        <td><span wicket:id="email"/></td>
+	        <td><span wicket:id="descricaoTipoUsuario"/></td>
+	        <td><span wicket:id="dataInclusao"/></td>
+
+			<td wicket:id="acoes" valign="middle">
+				<a wicket:id="alterar" href="#" class="btn_editar" title="Alterar">Alterar</a>
+			</td>
+	    </tr>
+	</table>
+	<span wicket:id="navigatorUsuario"/>
+</wicket:panel>

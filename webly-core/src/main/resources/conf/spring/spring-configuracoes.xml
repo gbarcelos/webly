@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util" xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd"
+    default-autowire="byName">
+
+   <bean name="emailSmtpHost" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.smtp.host}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="emailSmtpPort" class="java.lang.Integer">
+        <constructor-arg>
+            <value>${email.smtp.port}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="emailRemetenteEndereco" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.remetente.endereco}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="emailRemetenteNome" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.remetente.nome}</value>
+        </constructor-arg>
+    </bean>
+    
+    <bean name="emailRemetenteSenha" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.remetente.senha}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="emailDestinatarioEndereco" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.destinatario.endereco}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="emailDestinatarioNome" class="java.lang.String">
+        <constructor-arg>
+            <value>${email.destinatario.nome}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean name="ambiente" class="java.lang.String">
+        <constructor-arg>
+            <value>${ambiente}</value>
+        </constructor-arg>
+    </bean>
+    
+    <bean name="context" class="java.lang.String">
+        <constructor-arg>
+            <value>${context}</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="captchaProducer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+		<property name="config">
+			<bean class="com.google.code.kaptcha.util.Config">
+				<constructor-arg type="java.util.Properties" value="null">
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+</beans>

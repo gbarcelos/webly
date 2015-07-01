@@ -1,0 +1,35 @@
+package br.com.oak.webly.core.mensagem;
+
+public enum MensagemErro {
+
+	ERRO_INESPERADO("MSG_E000"),
+	ERRO_CAMPO_OBRIGATORIO("MSG_E001"),
+	NENHUM_REGISTRO("MSG_E002"),
+	NENHUM_REGISTRO_ENCONTRADO_COM_A_DESCRICAO("MSG_E029"),
+	TAMANHO_MAXIMO_ARQUIVO_INVALIDO("MSG_E030"),
+	FORMATO_ARQUIVO_INVALIDO("MSG_E031"),
+	INFORME_UM_ARQUIVO("MSG_E032"),
+	TAMANHO_MAXIMO_CAMPO_INVALIDO("MSG_E033"),
+	EMAIL_INVALIDO("MSG_E034"),
+	TAMANHO_CAMPO_INVALIDO_RANGE("MSG_E035"),
+	USUARIO_JA_EXISTE("MSG_E036"),
+	NOME_USUARIO_EOU_SENHA_INCORRETOS("MSG_E037"),
+	NOME_USUARIO_OU_EMAIL_INVALIDO("MSG_E038"),
+	NOVA_SENHA_E_CONFIRMACAO_DE_SENHA_DIFERENTES("MSG_E039"),
+	CAPTCHA_INCORRETO("MSG_E040"),
+	TAMANHO_CAMPO_INVALIDO("MSG_E041");
+
+	private String codigo;
+
+	private MensagemErro(String codigo){
+		this.setCodigo(codigo);
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+}
