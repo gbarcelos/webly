@@ -26,4 +26,4 @@ Funcionalidades
 	* Pesquisa de posts;
 	* Inclusão/Alteração de posts;
 		* Utilização de editor texto;
-	* Projeto preparado para multiplos locales;
+* Projeto preparado para multiplos locales;
