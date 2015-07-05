@@ -19,9 +19,13 @@ import br.com.oak.wicket.ui.basico.CampoTexto;
 
 public class NovoUsuarioFormPanel extends Panel {
 
-	private static final long serialVersionUID = -6172160141004126117L;
+	private static final long serialVersionUID = 7011830763258433926L;
 
 	private CampoTexto<String> campoNome;
+
+	private CampoPassword campoSenha;
+
+	private CampoPassword campoConfirmarSenha;
 
 	public NovoUsuarioFormPanel(final String idPanel,
 			final PageHelper pageHelper) {
@@ -33,6 +37,7 @@ public class NovoUsuarioFormPanel extends Panel {
 		criarCampoNome(pageHelper);
 		criarCampoEmail(pageHelper);
 		criarCampoSenha(pageHelper);
+		criarCampoConfirmarSenha(pageHelper);
 	}
 
 	private void criarCampoNome(final PageHelper pageHelper) {
@@ -76,7 +81,7 @@ public class NovoUsuarioFormPanel extends Panel {
 
 		final String label = pageHelper.getStringLabel(CamposUsuarioEnum.SENHA);
 
-		final CampoPassword campoSenha = new CampoPassword("password", true);
+		campoSenha = new CampoPassword("password", true);
 
 		campoSenha.setLabel(new Model<String>(label));
 		campoSenha.add(new AttributeModifier(
@@ -86,6 +91,24 @@ public class NovoUsuarioFormPanel extends Panel {
 		campoSenha.adicionaLimit(CamposUsuarioEnum.SENHA.getTamanhoMaximo());
 
 		add(campoSenha);
+	}
+
+	private void criarCampoConfirmarSenha(final PageHelper pageHelper) {
+
+		final String label = pageHelper
+				.getStringLabel(CamposUsuarioEnum.CONFIRMA_SENHA);
+
+		campoConfirmarSenha = new CampoPassword("confirmPassword", true);
+
+		campoConfirmarSenha.setLabel(new Model<String>(label));
+		campoConfirmarSenha.add(new AttributeModifier(
+				ConstantesWeb.ATTRIBUTE_PLACEHOLDER, label));
+
+		adicionarValidadorCampoSenha(campoConfirmarSenha, pageHelper);
+		campoConfirmarSenha.adicionaLimit(CamposUsuarioEnum.CONFIRMA_SENHA
+				.getTamanhoMaximo());
+
+		add(campoConfirmarSenha);
 	}
 
 	private void adicionarValidadorCampoNome(final String labelCampo) {
@@ -122,5 +145,13 @@ public class NovoUsuarioFormPanel extends Panel {
 
 	public TextField<String> getCampoNome() {
 		return campoNome;
+	}
+
+	public CampoPassword getCampoSenha() {
+		return campoSenha;
+	}
+
+	public CampoPassword getCampoConfirmarSenha() {
+		return campoConfirmarSenha;
 	}
 }

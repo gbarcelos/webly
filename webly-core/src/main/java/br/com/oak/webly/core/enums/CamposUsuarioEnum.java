@@ -11,6 +11,8 @@ public enum CamposUsuarioEnum implements CamposEnum {
 	EMAIL(50, "usuarioPage.campo.email"),
 
 	SENHA(5, 15, "usuarioPage.campo.senha"),
+	
+	CONFIRMA_SENHA(5, 15, "usuarioPage.campo.confirmaSenha"),
 
 	NOVA_SENHA(5, 15, "usuarioPage.campo.novaSenha"),
 

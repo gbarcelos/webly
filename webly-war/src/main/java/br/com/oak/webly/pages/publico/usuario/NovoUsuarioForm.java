@@ -7,6 +7,7 @@ import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.markup.html.IHeaderResponse;
 import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.validation.EqualPasswordInputValidator;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.Model;
@@ -84,6 +85,9 @@ public class NovoUsuarioForm extends Form<NovoUsuarioVo> {
 
 		panel = new NovoUsuarioFormPanel("frmPanelNou", pageHelper);
 		addOrReplace(panel);
+		
+		add(new EqualPasswordInputValidator(panel.getCampoSenha(),
+				panel.getCampoConfirmarSenha()));
 	}
 
 	private void registrar() {
